@@ -7,4 +7,4 @@ function validarSenhaCadastro() {
     }
     return true;
 }
-//  Criação da página de login com validação de senha
+//   Adição de validação de senha e confirmação no lado do cliente"
