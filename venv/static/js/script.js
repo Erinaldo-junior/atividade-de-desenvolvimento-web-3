@@ -7,3 +7,4 @@ function validarSenhaCadastro() {
     }
     return true;
 }
+//  Criação da página de login com validação de senha
