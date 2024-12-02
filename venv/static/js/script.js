@@ -7,4 +7,6 @@ function validarSenhaCadastro() {
     }
     return true;
 }
-//   Adição de validação de senha e confirmação no lado do cliente"
+
+
+// Adição de validação de senha e confirmação no lado do cliente
