@@ -1,6 +1,3 @@
-
-Aqui está o conteúdo para o arquivo README.md que descreve o projeto com base nos commits fornecidos. Este arquivo será exibido no GitHub para ajudar a entender o propósito e as funcionalidades do projeto.
-
 Projeto Flask - Atividade Web 3
 Este projeto foi desenvolvido utilizando o framework Flask para implementar uma aplicação web com diversas funcionalidades. Ele inclui páginas de login, cadastro e uma estrutura reutilizável com cabeçalho e rodapé. Além disso, o projeto contém validação de senha no cliente e no servidor, bem como estilos personalizados.
 
