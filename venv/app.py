@@ -51,3 +51,4 @@ def validar_senha(senha):
 # Executando o servidor
 if __name__ == '__main__':
     app_Erinaldo.run(debug=True)
+# Configuração inicial do projeto Flask
