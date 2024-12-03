@@ -13,7 +13,7 @@ def raiz():
 @app_Erinaldo.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        senha = request.form['password']
+        senha = request.form.get('password')  # Usar get para evitar KeyError
         if validar_senha(senha):
             flash('Login realizado com sucesso!', 'success')
             return redirect(url_for('sucesso'))
@@ -25,9 +25,11 @@ def login():
 @app_Erinaldo.route('/criar-conta', methods=['GET', 'POST'])
 def criar_conta():
     if request.method == 'POST':
-        senha = request.form['senha']
-        confirmacao = request.form['confirmar_senha']
-        if senha != confirmacao:
+        senha = request.form.get('senha')
+        confirmacao = request.form.get('confirmar_senha')
+        if not senha or not confirmacao:
+            flash('Preencha todos os campos!', 'error')
+        elif senha != confirmacao:
             flash('As senhas não coincidem!', 'error')
         elif not validar_senha(senha):
             flash('A senha não atende aos requisitos!', 'error')
@@ -41,6 +43,11 @@ def criar_conta():
 def sucesso():
     return render_template('sucesso.html')
 
+@app_Erinaldo.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
+
 # Função para validar a senha
 def validar_senha(senha):
     import re
@@ -51,4 +58,3 @@ def validar_senha(senha):
 # Executando o servidor
 if __name__ == '__main__':
     app_Erinaldo.run(debug=True)
-# Configuração inicial do projeto Flask
