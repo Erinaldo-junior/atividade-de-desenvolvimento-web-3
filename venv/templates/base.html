@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Meu Projeto Flask{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
 </head>
 <body>
     <header>
         <h1>Meu Projeto Flask</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/criar-conta">Criar Conta</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="container">
@@ -30,5 +36,3 @@
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
-
-<!-- Criação do template base com cabeçalho e rodapé reutilizáveis -->

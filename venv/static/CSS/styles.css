@@ -58,7 +58,7 @@ body {
 /* Estilização do texto */
 h2 {
     font-family: 'Arial', sans-serif;
-    font-size: 24px;
+    font-size: 35px;
     margin-bottom: 20px;
     color: #333;
     text-align: center; /* Centraliza o título */
@@ -115,36 +115,39 @@ ul li {
     text-decoration: underline;
 }
 
+/* Página de Sucesso */
 .success-container {
     display: flex;
-    justify-content: flex-start; /* Move o elemento para o lado esquerdo */
-    align-items: center; /* Mantém centralizado verticalmente */
-    min-height: calc(100vh - 130px); /* Considera o header e o footer */
-    text-align: center;
-    padding: 20px;
-    padding-left: 100px; /* Ajuste o valor para mover mais à esquerda */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: calc(100vh - 130px); /* Altura total considerando o header e footer */
+    margin: 0 auto; /* Remove qualquer margem lateral */
+    padding: 0; /* Remove padding adicional */
 }
-
 
 .success-card {
     background-color: #fff; /* Fundo branco */
     border-radius: 8px; /* Borda arredondada */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    padding: 30px; /* Espaçamento interno maior */
-    max-width: 500px; /* Largura máxima */
+    padding: 30px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima */
     width: 100%; /* Ajusta ao tamanho do container */
+    margin: 0 auto; /* Garante centralização horizontal */
+    text-align: center; /* Centraliza o texto */
 }
 
 .success-card h1 {
     font-size: 28px; /* Aumenta o tamanho do título */
     color: #28a745; /* Verde para sucesso */
     margin-bottom: 15px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
 }
 
 .success-card p {
     font-size: 16px; /* Texto descritivo */
     color: #555; /* Cinza claro */
     margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
 }
 
 .success-card a {
@@ -157,9 +160,40 @@ ul li {
     font-size: 16px; /* Tamanho do texto */
     font-weight: bold; /* Negrito */
     transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    text-align: center; /* Centraliza o texto */
 }
 
 .success-card a:hover {
     background-color: #0056b3; /* Azul mais escuro no hover */
     transform: scale(1.02); /* Efeito de aumento */
+}
+
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #444; /* Fundo do menu */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove padding */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho do texto */
+    transition: color 0.3s; /* Transição suave */
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Cor no hover */
 }
