@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %}Início{% endblock %}
+{% block title %}Página Inicial{% endblock %}
 
 {% block content %}
-<h1>Bem-vindo ao Meu Projeto Flask</h1>
-<p>Este é um exemplo de página inicial.</p>
-<a href="/login" class="btn-btn-primary">Ir para o Login</a>
+<div class="container text-center" style="margin-top: 50px;">
+    <h1>Bem-vindo ao Meu Projeto Flask</h1>
+    <p>Este é um exemplo de página inicial.</p>
+    <!-- Botão para a página de login -->
+    <a href="/login" class="btn btn-primary">Ir para Login</a>
+</div>
 {% endblock %}
+
 
 <!-- Implementação da página principal com conteúdo inicial -->
